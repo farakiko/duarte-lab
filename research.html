@@ -98,69 +98,188 @@
         <a href="https://arxiv.org/a/duarte_j_1.html"><img src="images/arxiv_logo.svg" width=22px> arXiv</a>,
         <a href="https://scholar.google.com/citations?user=GTtW9H0AAAAJ"><img src="images/google_scholar_logo.svg"
             width=20px> Google Scholar</a><br><br>
-            <div class="row">
-              <div class="col-lg-6">
-                <img class="img-fluid rounded mb-4" src="images/rej_pretrained_vs_from_scratch-2.png" alt="" width="500">
-              </div>
-              <div class="col-lg-6">
-                <h2>Large-Scale Pretraining and Finetuning for Efficient Jet Classification in Particle Physics</h2>
-                <p>Faced with the increasing computational cost of producing high-quality labeled simulation samples at the CERN LHC, we propose leveraging large volumes of unlabeled data to overcome the limitations of supervised learning methods, which heavily rely on detailed labeled simulations. By pretraining models on these vast, mostly untapped datasets, we aim to learn generic representations that can be finetuned with smaller quantities of labeled data. Our methodology employs contrastive learning with augmentations on jet datasets to teach the model to recognize common representations of jets, addressing the unique challenges of LHC physics. We showcase the scalability and effectiveness of our models by gradually increasing the size of the pretraining dataset and assessing the resultant performance enhancements. Our results, obtained from experiments on two datasets---JetClass, representing unlabeled data, and Top Tagging, serving as labeled simulation data---show significant improvements in data efficiency, computational efficiency, and overall performance.</p>
-                <p>Paper: <a href="https://arxiv.org/abs/2408.09343">arXiv:2408.09343</a>
-                  <br>Code: <a
-                    href="https://github.com/JavierZhao/JetCLR">https://github.com/JavierZhao/JetCLR</a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-6">
-                <img class="img-fluid rounded mb-4" src="images/HIG-23-012_1.png" alt="" width="500">
-              </div>
-              <div class="col-lg-6">
-                <h2>Search for highly energetic double Higgs boson production in the two bottom quark and two vector boson all-hadronic final state</h2>
-                <p>A search for standard model (SM) nonresonant Higgs boson pair (\(\mathrm{HH}\)) production is performed in the two bottom quark (\(\mathrm{b\overline{b}}\)) and all-hadronic two vector boson (\(\mathrm{VV}\to\mathrm{4q}\)) final states.
-                  The search is carried out in proton-proton collisions at \(13\,\mathrm{TeV}\) with a data set corresponding to a total luminosity of \(138\,\mathrm{fb}^{-1}\).
-                  It selects for highly Lorentz-boosted HH events, where each Higgs boson's daughter quarks are all merged inside a single anti-\(k_\mathrm{T}\) \(R = 0.8\) jet and introduces the new global particle transformer (GloParT) classifier to effectively perform boosted \(\mathrm{VV}\to\mathrm{4q}\) jet identification.
-                  The multiplicative modifier of the SM quartic coupling between two Higgs bosons and two vector bosons is observed (expected) to be constrained at \(95\%\) confidence level to \(\kappa_\mathrm{2V} \in [-0.04, 2.05]\) (\([0.05, 1.98]\)).</p>
-                <p>PAS: <a href="https://cds.cern.ch/record/2904879">CMS-PAS-HIG-23-012</a>
-                  <br>Figures: <a
-                    href="https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIG-23-012">https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIG-23-012</a>
-                  <br>2D Event display: <a href="https://cds.cern.ch/record/2905097">CMS-PHO-EVENTS-2024-034</a>
-                  <br>3D Event display: <a href="https://cms3d.web.cern.ch/HIG-23-012/">CMS-HIG-23-012</a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-6">
-                <img class="img-fluid rounded mb-4" src="images/HEPT.png" alt="" width="500">
-              </div>
-              <div class="col-lg-6">
-                <h2>Locality-Sensitive Hashing-Based Efficient Point Transformer with Applications in High-Energy Physics</h2>
-                <p>This study introduces a novel transformer model optimized for large-scale point cloud processing in scientific domains such as high-energy physics (HEP) and astrophysics. Addressing the limitations of graph neural networks and standard transformers, our model integrates local inductive bias and achieves near-linear complexity with hardware-friendly regular operations. One contribution of this work is the quantitative analysis of the error-complexity tradeoff of various sparsification techniques for building efficient transformers. Our findings highlight the superiority of using locality-sensitive hashing (LSH), especially OR & AND-construction LSH, in kernel approximation for large-scale point cloud data with local inductive bias. Based on this finding, we propose LSH-based Efficient Point Transformer (HEPT), which combines E2LSH with OR & AND constructions and is built upon regular computations. HEPT demonstrates remarkable performance on two critical yet time-consuming HEP tasks, significantly outperforming existing GNNs and transformers in accuracy and computational speed, marking a significant advancement in geometric deep learning and large-scale scientific data processing.</p>
-                <p>Paper: <a href="https://arxiv.org/abs/2402.12535">arXiv:2402.12535</a>
-                  <br>Code: <a
-                    href="https://github.com/Graph-COM/HEPT">https://github.com/Graph-COM/HEPT</a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-6">
-                <img class="img-fluid rounded mb-4" src="images/models.png" alt="" width="500">
-              </div>
-              <div class="col-lg-6">
-                <h2>Ultrafast jet classification on FPGAs for the HL-LHC</h2>
-                <p>Three machine learning models are used to perform jet origin classification. These models are optimized for deployment on a field-programmable gate array device. In this context, we demonstrate how latency and resource consumption scale with the input size and choice of algorithm. Moreover, the models proposed here are designed to work on the type of data and under the foreseen conditions at the CERN LHC during its high-luminosity phase. Through quantization-aware training and efficient synthetization for a specific field programmable gate array, we show that \(\mathcal{O}(100)\) ns inference of complex architectures such as Deep Sets and Interaction Networks is feasible at a relatively low computational resource cost.</p>
-                <p>Paper: <a href="https://doi.org/10.1088/2632-2153/ad5f10">Mach. Learn.: Sci. Technol. 5, 035017 (2024)</a>
-                  <br>Code: <a
-                    href="https://github.com/fastmachinelearning/l1-jet-id">https://github.com/fastmachinelearning/l1-jet-id</a>
-              </div>
-            </div>          
-            <div class="row">
-              <div class="col-lg-6">
-                <img class="img-fluid rounded mb-4" src="images/sophon.png" alt="" width="500">
-              </div>
-              <div class="col-lg-6">
-                <h2>Accelerating Resonance Searches via Signature-Oriented Pre-training</h2>
-                <p>The search for heavy resonances beyond the Standard Model (BSM) is a key objective at the LHC. While the recent use of advanced deep neural networks for boosted-jet tagging significantly enhances the sensitivity of dedicated searches, it is limited to specific final states, leaving vast potential BSM phase space underexplored. We introduce a novel experimental method, Signature-Oriented Pre-training for Heavy-resonance ObservatioN (Sophon), which leverages deep learning to cover an extensive number of boosted final states. Pre-trained on the comprehensive JetClass-II dataset, the Sophon model learns intricate jet signatures, ensuring the optimal constructions of various jet tagging discriminates and enabling high-performance transfer learning capabilities. We show that the method can not only push widespread model-specific searches to their sensitivity frontier, but also greatly improve model-agnostic approaches, accelerating LHC resonance searches in a broad sense.</p>
-                <p>Paper: <a href="https://arxiv.org/abs/2405.12972">arXiv:2405.12972</a>
-              </div>
-            </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <img class="img-fluid rounded mb-4" src="images/Di-Higgs.png" alt="" width="500">
+        </div>
+        <div class="col-lg-6">
+          <h2>Reconstruction of boosted and resolved multi-Higgs-boson events with symmetry-preserving attention
+            networks</h2>
+          <p>The production of multiple Higgs bosons at the CERN LHC provides a direct way to measure the trilinear and
+            quartic Higgs self-interaction strengths as well as potential access to beyond the standard model effects
+            that can enhance production at large transverse momentum \(p_\mathrm{T}\). The largest event fraction arises
+            from the
+            fully hadronic final state in which every Higgs boson decays to a bottom quark-antiquark pair
+            (\(b\overline{b}\)). This
+            introduces a combinatorial challenge known as the <i>jet assignment problem</i>: assigning jets to sets
+            representing Higgs boson candidates. Symmetry-preserving attention networks (SPA-Nets) have been
+            developed to address this challenge. However, the complexity of jet assignment increases when simultaneously
+            considering both \(H\to b\overline{b}\) reconstruction possibilities, i.e., two "resolved" small-radius jets
+            each containing
+            a shower initiated by a \(b\) quark or one "boosted" large-radius jet containing a merged shower initiated
+            by a (\(b\overline{b}\)) pair. The latter improves the reconstruction efficiency at high \(p_\mathrm{T}\).
+            In
+            this work, we introduce a
+            generalization to the SPA-Net approach to simultaneously consider both boosted and resolved reconstruction
+            possibilities and unambiguously interpret an event as "fully resolved", "fully boosted", or in between. We
+            report the performance of baseline methods, the original SPA-Net approach, and our generalized version on
+            nonresonant \(HH\) and \(HHH\) production at the LHC.
+          </p>
+          <p>Paper: <a href="https://arxiv.org/abs/2412.03819">arXiv:2412.03819</a>
+            <br>Code: <a href="https://github.com/ucsd-hep-ex/hhh">https://github.com/ucsd-hep-ex/hhh</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <img class="img-fluid rounded mb-4" src="images/J-JEPA-diagram.png" alt="" width="500">
+        </div>
+        <div class="col-lg-6">
+          <h2>Learning Symmetry-Independent Jet Representations via Jet-Based Joint Embedding Predictive Architecture
+          </h2>
+          <p>In high energy physics, self-supervised learning (SSL) methods have the potential to aid in the creation of
+            machine learning models without the need for labeled datasets for a variety of tasks, including those
+            related to jets -- narrow sprays of particles produced by quarks and gluons in high energy particle
+            collisions. This study introduces an approach to learning jet representations without hand-crafted
+            augmentations using a jet-based joint embedding predictive architecture (J-JEPA), which aims to predict
+            various physical targets from an informative context. As our method does not require hand-crafted
+            augmentation like other common SSL techniques, J-JEPA avoids introducing biases that could harm downstream
+            tasks. Since different tasks generally require invariance under different augmentations, this training
+            without hand-crafted augmentation enables versatile applications, offering a pathway toward a cross-task
+            foundation model. We finetune the representations learned by J-JEPA for jet tagging and benchmark them
+            against task-specific representations.
+          </p>
+          <p>Paper: <a href="https://arxiv.org/abs/2412.05333">arXiv:2412.05333</a>
+            <br>Code: <a href="https://github.com/ucsd-hep-ex/J-JEPA">https://github.com/ucsd-hep-ex/J-JEPA</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <img class="img-fluid rounded mb-4" src="images/Tbl-layer8-head6.png" alt="" width="500">
+        </div>
+        <div class="col-lg-6">
+          <h2>Interpreting Transformers for Jet Tagging</h2>
+          <p>Machine learning (ML) algorithms, particularly attention-based transformer models, have become
+            indispensable for analyzing the vast data generated by particle physics experiments like ATLAS and CMS at
+            the CERN LHC. Particle Transformer (ParT), a state-of-the-art model, leverages particle-level attention to
+            improve jet-tagging tasks, which are critical for identifying particles resulting from proton collisions.
+            This study focuses on interpreting ParT by analyzing attention heat maps and particle-pair correlations on
+            the \((\eta, \phi)\) plane, revealing a binary attention pattern where each particle attends to at most one
+            other particle. At the same time, we observe that ParT shows varying focus on important particles and
+            subjets depending on decay, indicating that the model learns traditional jet substructure observables. These
+            insights enhance our understanding of the model's internal workings and learning process, offering potential
+            avenues for improving the efficiency of transformer architectures in future high-energy physics
+            applications.
+          </p>
+          <p>Paper: <a href="https://arxiv.org/abs/2412.03673">arXiv:2412.03673</a>
+            <br>Code: <a
+              href="https://github.com/aaronw5/Interpreting-Transformers-for-Jet-Tagging">https://github.com/aaronw5/Interpreting-Transformers-for-Jet-Tagging</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <img class="img-fluid rounded mb-4" src="images/rej_pretrained_vs_from_scratch-2.png" alt="" width="500">
+        </div>
+        <div class="col-lg-6">
+          <h2>Large-Scale Pretraining and Finetuning for Efficient Jet Classification in Particle Physics</h2>
+          <p>Faced with the increasing computational cost of producing high-quality labeled simulation samples at the
+            CERN LHC, we propose leveraging large volumes of unlabeled data to overcome the limitations of supervised
+            learning methods, which heavily rely on detailed labeled simulations. By pretraining models on these vast,
+            mostly untapped datasets, we aim to learn generic representations that can be finetuned with smaller
+            quantities of labeled data. Our methodology employs contrastive learning with augmentations on jet datasets
+            to teach the model to recognize common representations of jets, addressing the unique challenges of LHC
+            physics. We showcase the scalability and effectiveness of our models by gradually increasing the size of the
+            pretraining dataset and assessing the resultant performance enhancements. Our results, obtained from
+            experiments on two datasets---JetClass, representing unlabeled data, and Top Tagging, serving as labeled
+            simulation data---show significant improvements in data efficiency, computational efficiency, and overall
+            performance.</p>
+          <p>Paper: <a href="https://arxiv.org/abs/2408.09343">arXiv:2408.09343</a>
+            <br>Code: <a href="https://github.com/JavierZhao/JetCLR">https://github.com/JavierZhao/JetCLR</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <img class="img-fluid rounded mb-4" src="images/HIG-23-012_1.png" alt="" width="500">
+        </div>
+        <div class="col-lg-6">
+          <h2>Search for highly energetic double Higgs boson production in the two bottom quark and two vector boson
+            all-hadronic final state</h2>
+          <p>A search for standard model (SM) nonresonant Higgs boson pair (\(\mathrm{HH}\)) production is performed in
+            the two bottom quark (\(\mathrm{b\overline{b}}\)) and all-hadronic two vector boson
+            (\(\mathrm{VV}\to\mathrm{4q}\)) final states.
+            The search is carried out in proton-proton collisions at \(13\,\mathrm{TeV}\) with a data set corresponding
+            to a total luminosity of \(138\,\mathrm{fb}^{-1}\).
+            It selects for highly Lorentz-boosted HH events, where each Higgs boson's daughter quarks are all merged
+            inside a single anti-\(k_\mathrm{T}\) \(R = 0.8\) jet and introduces the new global particle transformer
+            (GloParT) classifier to effectively perform boosted \(\mathrm{VV}\to\mathrm{4q}\) jet identification.
+            The multiplicative modifier of the SM quartic coupling between two Higgs bosons and two vector bosons is
+            observed (expected) to be constrained at \(95\%\) confidence level to \(\kappa_\mathrm{2V} \in [-0.04,
+            2.05]\) (\([0.05, 1.98]\)).</p>
+          <p>PAS: <a href="https://cds.cern.ch/record/2904879">CMS-PAS-HIG-23-012</a>
+            <br>Figures: <a
+              href="https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIG-23-012">https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/HIG-23-012</a>
+            <br>2D Event display: <a href="https://cds.cern.ch/record/2905097">CMS-PHO-EVENTS-2024-034</a>
+            <br>3D Event display: <a href="https://cms3d.web.cern.ch/HIG-23-012/">CMS-HIG-23-012</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <img class="img-fluid rounded mb-4" src="images/HEPT.png" alt="" width="500">
+        </div>
+        <div class="col-lg-6">
+          <h2>Locality-Sensitive Hashing-Based Efficient Point Transformer with Applications in High-Energy Physics</h2>
+          <p>This study introduces a novel transformer model optimized for large-scale point cloud processing in
+            scientific domains such as high-energy physics (HEP) and astrophysics. Addressing the limitations of graph
+            neural networks and standard transformers, our model integrates local inductive bias and achieves
+            near-linear complexity with hardware-friendly regular operations. One contribution of this work is the
+            quantitative analysis of the error-complexity tradeoff of various sparsification techniques for building
+            efficient transformers. Our findings highlight the superiority of using locality-sensitive hashing (LSH),
+            especially OR & AND-construction LSH, in kernel approximation for large-scale point cloud data with local
+            inductive bias. Based on this finding, we propose LSH-based Efficient Point Transformer (HEPT), which
+            combines E2LSH with OR & AND constructions and is built upon regular computations. HEPT demonstrates
+            remarkable performance on two critical yet time-consuming HEP tasks, significantly outperforming existing
+            GNNs and transformers in accuracy and computational speed, marking a significant advancement in geometric
+            deep learning and large-scale scientific data processing.</p>
+          <p>Paper: <a href="https://arxiv.org/abs/2402.12535">arXiv:2402.12535</a>
+            <br>Code: <a href="https://github.com/Graph-COM/HEPT">https://github.com/Graph-COM/HEPT</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <img class="img-fluid rounded mb-4" src="images/models.png" alt="" width="500">
+        </div>
+        <div class="col-lg-6">
+          <h2>Ultrafast jet classification on FPGAs for the HL-LHC</h2>
+          <p>Three machine learning models are used to perform jet origin classification. These models are optimized for
+            deployment on a field-programmable gate array device. In this context, we demonstrate how latency and
+            resource consumption scale with the input size and choice of algorithm. Moreover, the models proposed here
+            are designed to work on the type of data and under the foreseen conditions at the CERN LHC during its
+            high-luminosity phase. Through quantization-aware training and efficient synthetization for a specific field
+            programmable gate array, we show that \(\mathcal{O}(100)\) ns inference of complex architectures such as
+            Deep Sets and Interaction Networks is feasible at a relatively low computational resource cost.</p>
+          <p>Paper: <a href="https://doi.org/10.1088/2632-2153/ad5f10">Mach. Learn.: Sci. Technol. 5, 035017 (2024)</a>
+            <br>Code: <a
+              href="https://github.com/fastmachinelearning/l1-jet-id">https://github.com/fastmachinelearning/l1-jet-id</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <img class="img-fluid rounded mb-4" src="images/sophon.png" alt="" width="500">
+        </div>
+        <div class="col-lg-6">
+          <h2>Accelerating Resonance Searches via Signature-Oriented Pre-training</h2>
+          <p>The search for heavy resonances beyond the Standard Model (BSM) is a key objective at the LHC. While the
+            recent use of advanced deep neural networks for boosted-jet tagging significantly enhances the sensitivity
+            of dedicated searches, it is limited to specific final states, leaving vast potential BSM phase space
+            underexplored. We introduce a novel experimental method, Signature-Oriented Pre-training for Heavy-resonance
+            ObservatioN (Sophon), which leverages deep learning to cover an extensive number of boosted final states.
+            Pre-trained on the comprehensive JetClass-II dataset, the Sophon model learns intricate jet signatures,
+            ensuring the optimal constructions of various jet tagging discriminates and enabling high-performance
+            transfer learning capabilities. We show that the method can not only push widespread model-specific searches
+            to their sensitivity frontier, but also greatly improve model-agnostic approaches, accelerating LHC
+            resonance searches in a broad sense.</p>
+          <p>Paper: <a href="https://arxiv.org/abs/2405.12972">arXiv:2405.12972</a>
+        </div>
+      </div>
       <div class="row">
         <div class="col-lg-6">
           <img class="img-fluid rounded mb-4" src="images/igapt.png" alt="" width="500">
@@ -199,8 +318,18 @@
           <img class="img-fluid rounded mb-4" src="images/visual_abstract.png" alt="" width="500">
         </div>
         <div class="col-lg-6">
-          <h2>Improved particle-flow event reconstruction with scalable neural networks for current and future particle detectors</h2>
-          <p>Efficient and accurate algorithms are necessary to reconstruct particles in the highly granular detectors anticipated at the High-Luminosity Large Hadron Collider and the Future Circular Collider. We study scalable machine learning models for event reconstruction in electron-positron collisions based on a full detector simulation. Particle-flow reconstruction can be formulated as a supervised learning task using tracks and calorimeter clusters. We compare a graph neural network and kernel-based transformer and demonstrate that we can avoid quadratic operations while achieving realistic reconstruction. We show that hyperparameter tuning significantly improves the performance of the models. The best graph neural network model shows improvement in the jet transverse momentum resolution by up to 50% compared to the rule-based algorithm. The resulting model is portable across Nvidia, AMD and Habana hardware. Accurate and fast machine-learning based reconstruction can significantly improve future measurements at colliders.</p>
+          <h2>Improved particle-flow event reconstruction with scalable neural networks for current and future particle
+            detectors</h2>
+          <p>Efficient and accurate algorithms are necessary to reconstruct particles in the highly granular detectors
+            anticipated at the High-Luminosity Large Hadron Collider and the Future Circular Collider. We study scalable
+            machine learning models for event reconstruction in electron-positron collisions based on a full detector
+            simulation. Particle-flow reconstruction can be formulated as a supervised learning task using tracks and
+            calorimeter clusters. We compare a graph neural network and kernel-based transformer and demonstrate that we
+            can avoid quadratic operations while achieving realistic reconstruction. We show that hyperparameter tuning
+            significantly improves the performance of the models. The best graph neural network model shows improvement
+            in the jet transverse momentum resolution by up to 50% compared to the rule-based algorithm. The resulting
+            model is portable across Nvidia, AMD and Habana hardware. Accurate and fast machine-learning based
+            reconstruction can significantly improve future measurements at colliders.</p>
           <p>Paper: <a href="https://doi.org/10.1038/s42005-024-01599-5">Commun. Phys. 7, 124 (2024)</a>
             <br>Code: <a href="https://github.com/jpata/particleflow">https://github.com/jpata/particleflow</a>
         </div>
@@ -316,7 +445,7 @@
             couplings, \(\kappa_{2V}\), excluding \(\kappa_{2V}=0\) for the first time, with a significance of 6.3
             standard deviations when other H couplings are fixed to their standard model values.
           </p>
-          <p>Paper: <a href="https://doi.org/10.1103/PhysRevLett.131.041803">	Phys. Rev. Lett. 131, 041803 (2023)</a>
+          <p>Paper: <a href="https://doi.org/10.1103/PhysRevLett.131.041803"> Phys. Rev. Lett. 131, 041803 (2023)</a>
             <br>Figures: <a
               href="https://cms-results.web.cern.ch/cms-results/public-results/publications/B2G-22-003/index.html">https://cms-results.web.cern.ch/cms-results/public-results/publications/B2G-22-003/index.html</a>
         </div>
@@ -411,7 +540,9 @@
             with,
             and set MPGAN as a benchmark to improve upon for future generative models.
           </p>
-          <p>Paper: <a href="https://proceedings.neurips.cc/paper/2021/hash/c8512d142a2d849725f31a9a7a361ab9-Abstract.html">NeurIPS 34, 23858 (2021)</a>
+          <p>Paper: <a
+              href="https://proceedings.neurips.cc/paper/2021/hash/c8512d142a2d849725f31a9a7a361ab9-Abstract.html">NeurIPS
+              34, 23858 (2021)</a>
             <br>Code: <a href="https://github.com/rkansal47/MPGAN">https://github.com/rkansal47/MPGAN</a>
         </div>
       </div>
